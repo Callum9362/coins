@@ -66,10 +66,10 @@
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           {{ exchange.trust_score_rank }}
                         </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           {{ exchange.trade_volume_24h_btc_normalized }}
                         </td>
-                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                           {{ exchange.trade_volume_24h_btc }}
                         </td>
                       </tr>
