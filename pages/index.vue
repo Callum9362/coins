@@ -1,5 +1,5 @@
 <template>
-  <Coins/>
+  <Header />
 </template>
 
 <script>
