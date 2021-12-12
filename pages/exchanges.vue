@@ -16,9 +16,6 @@
                     <thead class="bg-gray-50">
                       <tr>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                          #
-                        </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                           Name
                         </th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
@@ -40,9 +37,6 @@
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
                       <tr v-for="exchange of exchanges" :key="exchange.id">
-                        <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-900">1</div>
-                        </td>
                         <td class="px-6 py-4 whitespace-nowrap">
                           <div class="flex items-center">
                             <div class="flex-shrink-0 h-10 w-10">
@@ -87,7 +81,8 @@
   export default{
     data(){
       return {
-        exchanges:[]
+        exchanges:[],
+        number: 1,
       }
     },
     async fetch()
