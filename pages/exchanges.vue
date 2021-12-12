@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div class="container mx-auto mt-3">
       <p v-if="$fetchState.pending">Fetching Exchanges...</p>
       <p v-else-if="$fetchState.error">An error occured</p>
       <div v-else>
@@ -67,10 +67,10 @@
                           {{ exchange.trust_score_rank }}
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          {{ exchange.trade_volume_24h_btc_normalized }}
+                          {{ exchange.trade_volume_24h_btc_normalized.toFixed(2) }}
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          {{ exchange.trade_volume_24h_btc }}
+                          {{ exchange.trade_volume_24h_btc.toFixed(2) }}
                         </td>
                       </tr>
                     </tbody>
