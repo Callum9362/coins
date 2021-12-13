@@ -80,8 +80,7 @@
   export default{
     data(){
       return {
-        exchanges:[],
-        number: 1,
+        exchanges:[]
       }
     },
     async fetch()

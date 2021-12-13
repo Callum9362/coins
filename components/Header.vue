@@ -23,8 +23,8 @@
         <a href="/exchanges" class="text-base font-medium text-gray-500 hover:text-gray-900">
           Exchanges
         </a>
-        <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
-          Docs
+        <a href="/coins" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          Coins
         </a>
       </nav>
       <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
