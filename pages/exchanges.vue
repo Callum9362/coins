@@ -7,7 +7,6 @@
           <ul>
             <li ></li>
           </ul>
-          <!-- This example requires Tailwind CSS v2.0+ -->
           <div class="flex flex-col">
             <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
               <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
@@ -61,10 +60,10 @@
                           {{ exchange.trust_score_rank }}
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          {{ exchange.trade_volume_24h_btc_normalized.toFixed(2) }}
+                          ${{ exchange.trade_volume_24h_btc_normalized.toFixed(2) }}
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                          {{ exchange.trade_volume_24h_btc.toFixed(2) }}
+                          ${{ exchange.trade_volume_24h_btc.toFixed(2) }}
                         </td>
                       </tr>
                     </tbody>
