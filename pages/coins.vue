@@ -47,8 +47,8 @@
                         <td class="px-6 py-4 whitespace-nowrap">
                           <div class="flex items-center">
                             <div class="ml-4">
-                              <div class="text-sm font-medium text-gray-900">
-                                ${{ coin.current_price }}
+                              <div class="text-sm font-medium" v-bind:class="{ highlight(coin.price_change_percentage_24h) }">
+                                ${{ coin.current_price.toLocaleString() }}
                               </div>
                             </div>
                           </div>
@@ -69,6 +69,19 @@
     data(){
       return {
         coins:[]
+      }
+    },
+    methods:{
+      highlight(priceChange){
+        if(priceChange < 0)
+        {
+          return 'text-red-900'
+        }
+        if(priceChange > 0)
+        {
+          return 'text-green-900'
+        }
+        return '';
       }
     },
     async fetch()
