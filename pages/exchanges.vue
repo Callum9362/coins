@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto mt-3">
+  <div class="container mx-auto px-4 mt-3">
       <p v-if="$fetchState.pending">Fetching Exchanges...</p>
       <p v-else-if="$fetchState.error">An error occured</p>
       <div v-else>
@@ -46,7 +46,8 @@
                           </div>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap">
-                          <div class="text-sm text-gray-900">{{ exchange.year_established }}</div>
+                          <div v-if="exchange.year_established" class="text-sm text-gray-900">{{ exchange.year_established }}</div>
+                          <div v-else class="text-sm text-gray-900">Unknown</div>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap">
                           <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">

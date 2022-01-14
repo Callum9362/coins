@@ -1,5 +1,5 @@
 <template>
-   <div class="container mx-auto mt-3">
+   <div class="container mx-auto mt-3 px-4">
       <p v-if="$fetchState.pending">Fetching Coins...</p>
       <p v-else-if="$fetchState.error">An error occured</p>
       <div v-else>
@@ -47,7 +47,7 @@
                         <td class="px-6 py-4 whitespace-nowrap">
                           <div class="flex items-center">
                             <div class="ml-4">
-                              <div class="text-sm font-medium" v-bind:class="{ highlight(coin.price_change_percentage_24h) }">
+                              <div class="text-sm font-medium">
                                 ${{ coin.current_price.toLocaleString() }}
                               </div>
                             </div>
