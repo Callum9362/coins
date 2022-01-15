@@ -19,6 +19,12 @@
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                           Price
                         </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                          24h
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                          Market Cap
+                        </th>
                       </tr>
                     </thead>
                     <tbody class="bg-white divide-y divide-gray-200">
@@ -44,8 +50,22 @@
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap">
                           <div class="flex">
-                              <div class="text-sm font-medium" v-bind:class="highlight(coin.price_change_percentage_24h)">
+                              <div class="text-sm" v-bind:class="highlight(coin.price_change_percentage_24h)">
                                 ${{ coin.current_price.toLocaleString() }}
+                              </div>
+                          </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <div class="flex">
+                              <div class="text-sm" v-bind:class="highlight(coin.market_cap_change_percentage_24h)">
+                                {{ coin.market_cap_change_percentage_24h.toFixed(1) }}
+                              </div>
+                          </div>
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                          <div class="flex">
+                              <div class="text-sm">
+                                ${{ coin.market_cap_change_24h.toLocaleString() }}
                               </div>
                           </div>
                         </td>
