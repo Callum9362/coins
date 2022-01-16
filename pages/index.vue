@@ -1,5 +1,5 @@
 <template>
-
+  <Trending />
 </template>
 
 <script>

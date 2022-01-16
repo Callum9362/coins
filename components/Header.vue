@@ -19,12 +19,23 @@
         </button>
       </div>
       <nav class="hidden md:flex space-x-10">
-
+        <a href="/coins" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          Coins
+        </a>
         <a href="/exchanges" class="text-base font-medium text-gray-500 hover:text-gray-900">
           Exchanges
         </a>
-        <a href="/coins" class="text-base font-medium text-gray-500 hover:text-gray-900">
-          Coins
+        <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          NFT
+        </a>
+        <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          Publications
+        </a>
+        <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          Resources
+        </a>
+        <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          Products
         </a>
       </nav>
       <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
